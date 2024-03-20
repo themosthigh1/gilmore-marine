@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { urlForImage } from "../../../../sanity/lib/image";
 import { Boat } from "@/models/boat";
+import boat from "../../../../sanity/schemas/boat";
 
 const BoatDetailCard = (props: Boat) => {
   const { model, description, slug, images, details, price, imageUrl } = props;

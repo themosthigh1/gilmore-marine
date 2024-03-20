@@ -19,9 +19,7 @@ const FeaturedInventoryPage = async () => {
       <div className="flex flex-row">
         {data.map((boat) => (
           <>
-            <div className="basis-3/4">
-              <BoatDetailCard {...boat} key={boat.key} />
-            </div>
+            <div className="basis-3/4"></div>
           </>
         ))}
       </div>

@@ -18,8 +18,5 @@ export interface Boat extends Base {
   newCondition: boolean;
   key: number;
   price: number;
-  images: Array<{
-    _key: string;
-    url: string;
-  }>;
+  images: { _key: string; url: string };
 }
