@@ -1,6 +1,7 @@
 import { getAllBoats } from "@/libs/getAllBoats";
 import BoatDetailCard from "@/app/components/BoatDetailCard/BoatDetailCard";
 import { Boat } from "@/models/boat";
+import Image from "next/image";
 
 const FeaturedInventoryPage = async () => {
   const data = await getAllBoats();
@@ -19,7 +20,9 @@ const FeaturedInventoryPage = async () => {
       <div className="flex flex-row">
         {data.map((boat) => (
           <>
-            <div className="basis-3/4"></div>
+            <div className="basis-3/4">
+              <Image src={boat.images.url} alt="title"></Image>
+            </div>
           </>
         ))}
       </div>
