@@ -5,7 +5,6 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-import { colorInput } from "@sanity/color-input";
 import { media } from "sanity-plugin-media";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
@@ -28,7 +27,6 @@ export default defineConfig({
   plugins: [
     structureTool(),
     media(),
-    colorInput(),
     visionTool({ defaultApiVersion: apiVersion }),
   ],
 });
